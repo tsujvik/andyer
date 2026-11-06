@@ -21,82 +21,48 @@
 </nav>
 </header>
 
-<section aria-label="Welcome" style="position: relative; display: flex; flex-wrap: wrap; filter: drop-shadow(0 22px 30px rgba(60,40,30,.35)); transform: rotate(-.6deg)">
+<section class="notebook" aria-label="Welcome">
+<div class="nb-photo">
+<img class="nb-img" src="img/notebook.png" alt="">
 
-<div style="position: absolute; right: -14px; top: 70px; display: flex; flex-direction: column; gap: 10px; z-index: 0">
-<span aria-hidden="true" class="tab" style="width: 40px; height: 64px; background: var(--yellow); border-radius: 0 8px 8px 0; display: block"></span>
-<span aria-hidden="true" class="tab" style="width: 40px; height: 64px; background: #7C4DFF; border-radius: 0 8px 8px 0; display: block"></span>
-<span aria-hidden="true" class="tab" style="width: 40px; height: 64px; background: #2FBF8F; border-radius: 0 8px 8px 0; display: block"></span>
-</div>
-
-<div style="flex: 1 1 520px; min-width: 0; position: relative; z-index: 1; background: var(--pink); padding: 56px 48px 64px; box-sizing: border-box; box-shadow: inset -36px 0 40px -28px rgba(0,0,0,.35); overflow: hidden; min-height: 620px">
-<div aria-hidden="true" class="keys" style="position: absolute; right: 0; top: 0; bottom: 0; width: 64px; opacity: .9"></div>
-<div aria-hidden="true" class="staff torn" style="position: absolute; left: -20px; bottom: -10px; width: 62%; height: 230px; transform: rotate(4deg); opacity: .95"></div>
-
-<div style="position: relative; display: flex; flex-direction: column; gap: 28px; padding-right: 60px">
+<div class="nb-page nb-left">
 <h1 class="title" aria-label="andy's page">
 <span class="word" aria-hidden="true"><span class="ltr l-a">&#xE001;</span><span class="ltr l-n">n</span><span class="ltr l-d">d</span><span class="ltr l-y">y</span><span class="ltr l-apos">'</span><span class="ltr l-s">s</span></span>
 <span class="word" aria-hidden="true"><span class="ltr l-p">p</span><span class="ltr l-a2">a</span><span class="ltr l-g">g</span><span class="ltr l-e">e</span></span>
 </h1>
-
-<p style="margin: 0; max-width: 430px; font-size: 26px; line-height: 1.3; background: #F7F3EA; padding: 14px 18px; transform: rotate(-1deg); box-shadow: 3px 5px 0 rgba(0,0,0,.12)">a little book i keep online. one place to keep my days together, glued in as i go.</p>
-
-<a href="#pages" style="align-self: flex-start; text-decoration: none; display: inline-flex; align-items: center; gap: 14px; background: #141214; color: #F7F3EA; padding: 16px 26px; font-size: 26px; transform: rotate(2deg); box-shadow: 5px 6px 0 var(--yellow)">
+<p class="blurb">a little book i keep online. one place to keep my days together, glued in as i go.</p>
+<a href="#pages" class="open-btn">
 open the book
 <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"></path></svg>
 </a>
-</div>
-
-<svg class="sticker" aria-hidden="true" viewBox="0 0 120 120" style="position: absolute; right: 80px; bottom: 36px; width: 120px; height: 120px; transform: rotate(-14deg)">
+<svg class="sticker nb-star" aria-hidden="true" viewBox="0 0 120 120">
 <polygon points="60,4 74,42 116,44 82,68 94,110 60,86 26,110 38,68 4,44 46,42" fill="#B23A3A"></polygon>
 <polygon points="60,16 71,46 104,48 77,66 87,99 60,80 33,99 43,66 16,48 49,46" fill="none" stroke="#F7F3EA" stroke-width="2.5" stroke-dasharray="5 4"></polygon>
 </svg>
-<svg class="sticker" aria-hidden="true" viewBox="0 0 60 120" style="position: absolute; right: 200px; bottom: 70px; width: 50px; height: 100px; transform: rotate(18deg)">
-<polygon points="38,2 6,66 28,66 16,118 54,46 32,46 46,2" fill="#FF7A1A"></polygon>
-<polygon points="38,2 6,66 28,66 16,118 54,46 32,46 46,2" fill="none" stroke="#B5300B" stroke-width="2"></polygon>
-</svg>
 </div>
 
-<div style="flex: 1 1 520px; min-width: 0; position: relative; z-index: 1; background: #141214; color: #F7F3EA; padding: 56px 48px 64px; box-sizing: border-box; box-shadow: inset 36px 0 40px -28px rgba(0,0,0,.6); overflow: hidden; min-height: 620px">
-<svg aria-hidden="true" viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%">
-<path d="M-40 760 C 120 560, 260 520, 660 120" stroke="#FF5FA2" stroke-width="46" fill="none" stroke-linecap="round" opacity=".55"></path>
-<path d="M-20 790 C 160 600, 300 560, 680 180" stroke="#FFB23A" stroke-width="22" fill="none" stroke-linecap="round" opacity=".85"></path>
-<path d="M10 800 C 190 640, 330 600, 700 250" stroke="#F5D547" stroke-width="10" fill="none" stroke-linecap="round"></path>
-<path d="M-60 720 C 90 540, 230 470, 640 60" stroke="#9B6BFF" stroke-width="14" fill="none" stroke-linecap="round" opacity=".85"></path>
-<path d="M40 820 C 220 680, 370 640, 720 330" stroke="#5BE3B0" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 14"></path>
-<g fill="#F7F3EA">
-<path class="tw" d="M90 90 l4 14 14 4 -14 4 -4 14 -4 -14 -14 -4 14 -4z"></path>
-<path class="tw" style="animation-delay: 1s" d="M520 70 l3 10 10 3 -10 3 -3 10 -3 -10 -10 -3 10 -3z"></path>
-<path class="tw" style="animation-delay: 2s" d="M470 330 l3 10 10 3 -10 3 -3 10 -3 -10 -10 -3 10 -3z"></path>
-<circle class="tw" style="animation-delay: .5s" cx="250" cy="60" r="2.5"></circle>
-<circle class="tw" style="animation-delay: 1.5s" cx="560" cy="250" r="2"></circle>
-<circle class="tw" cx="60" cy="300" r="2"></circle>
-</g>
-</svg>
-
-<div style="position: relative; display: flex; flex-direction: column; gap: 26px; height: 100%">
-<div style="position: relative; width: 230px; height: 200px; align-self: flex-end; transform: rotate(8deg)">
-<svg aria-hidden="true" viewBox="0 0 230 200" style="position: absolute; inset: 0; width: 100%; height: 100%">
+<div class="nb-page nb-right">
+<div class="hi-burst">
+<svg aria-hidden="true" viewBox="0 0 230 200">
 <polygon points="20,40 62,52 60,6 96,44 118,2 132,48 176,14 166,62 224,50 184,96 228,128 172,132 196,190 140,152 118,198 100,150 52,186 64,138 6,150 44,104 2,80 50,78" fill="#141214" transform="translate(6 7)" opacity=".6"></polygon>
 <polygon points="20,40 62,52 60,6 96,44 118,2 132,48 176,14 166,62 224,50 184,96 228,128 172,132 196,190 140,152 118,198 100,150 52,186 64,138 6,150 44,104 2,80 50,78" fill="var(--yellow)"></polygon>
 </svg>
-<span style="position: absolute; inset: 0; display: grid; place-content: center; font-family: Milesdane, serif; font-size: 64px; color: #141214; transform: rotate(-12deg)">hi!</span>
+<span>hi!</span>
 </div>
-
-<svg aria-hidden="true" viewBox="0 0 600 120" style="width: 100%; height: 110px">
+<svg class="doodle-wave" aria-hidden="true" viewBox="0 0 600 120">
 <g class="wave">
-<path d="M0 60 L220 60 L236 56 L248 66 L262 52 L274 70 L286 30 L296 96 L306 12 L316 108 L326 22 L336 92 L346 40 L356 78 L366 50 L378 66 L392 58 L410 62 L600 60" fill="none" stroke="#FF5FA2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
-<path d="M0 63 L220 63 L236 60 L248 69 L262 56 L274 73 L286 36 L296 92 L306 20 L316 102 L326 28 L336 88 L346 44 L356 74 L366 54 L378 68 L392 61 L410 64 L600 63" fill="none" stroke="#FFB23A" stroke-width="1.5" stroke-linejoin="round" opacity=".8"></path>
+<path d="M0 60 L220 60 L236 56 L248 66 L262 52 L274 70 L286 30 L296 96 L306 12 L316 108 L326 22 L336 92 L346 40 L356 78 L366 50 L378 66 L392 58 L410 62 L600 60" fill="none" stroke="#D6336C" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
 </g>
 </svg>
-
-<div style="margin-top: auto; background: rgba(20,18,20,.72); border: 1.5px solid rgba(247,243,234,.45); padding: 22px 24px; max-width: 380px; transform: rotate(-2deg)">
-<div style="font-size: 16px; letter-spacing: .08em; color: #FFB4D0">now on</div>
-<div style="font-family: Milesdane, serif; font-size: 46px; line-height: 1.15; margin-top: 4px">the front page</div>
-<div style="font-size: 18px; margin-top: 6px; color: #E0D8CC">up next: more pages, soon</div>
-<div aria-hidden="true" style="margin-top: 16px; height: 6px; background: rgba(247,243,234,.25); border-radius: 3px; overflow: hidden"><div style="width: 12%; height: 100%; background: #FF5FA2"></div></div>
-<div style="display: flex; justify-content: space-between; font-size: 15px; margin-top: 6px; color: #E0D8CC"><span>page 1</span><span>page ?</span></div>
+<div class="sticky-note">
+<div class="note-label">now on</div>
+<div class="note-title">the front page</div>
+<div class="note-sub">up next: more pages, soon</div>
 </div>
+<svg class="sticker nb-bolt" aria-hidden="true" viewBox="0 0 60 120">
+<polygon points="38,2 6,66 28,66 16,118 54,46 32,46 46,2" fill="#FF7A1A"></polygon>
+<polygon points="38,2 6,66 28,66 16,118 54,46 32,46 46,2" fill="none" stroke="#B5300B" stroke-width="2"></polygon>
+</svg>
 </div>
 </div>
 </section>
@@ -110,49 +76,28 @@ open the book
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 34px 28px">
 
 <div class="card torn lift" style="background: #F7F3EA; padding: 34px 26px 30px; transform: rotate(-2.5deg); display: flex; flex-direction: column; gap: 14px; min-height: 280px; box-sizing: border-box">
-<svg class="sticker" aria-hidden="true" viewBox="0 0 90 140" style="width: 64px; height: 100px; transform: rotate(-10deg)">
-<rect x="10" y="4" width="70" height="62" rx="14" fill="#B9BFC8"></rect>
-<rect x="20" y="14" width="50" height="40" rx="5" fill="#7FB8E8"></rect>
-<rect x="10" y="70" width="70" height="66" rx="14" fill="#A3AAB5"></rect>
-<g fill="#5C6470"><circle cx="28" cy="88" r="4"></circle><circle cx="45" cy="88" r="4"></circle><circle cx="62" cy="88" r="4"></circle><circle cx="28" cy="104" r="4"></circle><circle cx="45" cy="104" r="4"></circle><circle cx="62" cy="104" r="4"></circle><circle cx="28" cy="120" r="4"></circle><circle cx="45" cy="120" r="4"></circle><circle cx="62" cy="120" r="4"></circle></g>
-</svg>
+<img class="cutout card-pic" src="img/phone.png" alt="" style="transform: rotate(-10deg)" onerror="this.style.visibility='hidden'">
 <div style="font-size: 16px; letter-spacing: .1em">page 01</div>
 <div style="font-family: Milesdane, serif; font-size: 44px; line-height: 1.1">coming soon</div>
 <div style="margin-top: auto; height: 6px; background: var(--pink)"></div>
 </div>
 
 <div class="card torn lift" style="background: var(--yellow); padding: 34px 26px 30px; transform: rotate(1.8deg); display: flex; flex-direction: column; gap: 14px; min-height: 280px; box-sizing: border-box">
-<svg class="sticker" aria-hidden="true" viewBox="0 0 140 100" style="width: 112px; height: 80px; transform: rotate(6deg)">
-<path d="M40 18 Q70 0 100 18" stroke="#3A3A3A" stroke-width="6" fill="none" stroke-linecap="round"></path>
-<rect x="6" y="18" width="128" height="78" rx="10" fill="#C8473A"></rect>
-<rect x="44" y="26" width="52" height="18" rx="3" fill="#F2E3C8"></rect>
-<circle cx="32" cy="68" r="20" fill="#2A2A2A"></circle><circle cx="32" cy="68" r="8" fill="#7A7A7A"></circle>
-<circle cx="108" cy="68" r="20" fill="#2A2A2A"></circle><circle cx="108" cy="68" r="8" fill="#7A7A7A"></circle>
-<rect x="58" y="56" width="24" height="28" rx="3" fill="#F2E3C8"></rect>
-</svg>
+<img class="cutout card-pic" src="img/boombox.png" alt="" style="transform: rotate(6deg)" onerror="this.style.visibility='hidden'">
 <div style="font-size: 16px; letter-spacing: .1em">page 02</div>
 <div style="font-family: Milesdane, serif; font-size: 44px; line-height: 1.1">coming soon</div>
 <div style="margin-top: auto; height: 6px; background: #141214"></div>
 </div>
 
 <div class="card torn lift" style="background: #141214; color: #F7F3EA; padding: 34px 26px 30px; transform: rotate(-1.2deg); display: flex; flex-direction: column; gap: 14px; min-height: 280px; box-sizing: border-box">
-<svg class="sticker" aria-hidden="true" viewBox="0 0 100 100" style="width: 80px; height: 80px; transform: rotate(-8deg)">
-<circle cx="50" cy="56" r="38" fill="#F5D547"></circle>
-<circle cx="50" cy="56" r="30" fill="#FFF6D8"></circle>
-<rect x="44" y="6" width="12" height="12" rx="2" fill="#F5D547"></rect>
-<path d="M50 56 L50 34 M50 56 L64 64" stroke="#141214" stroke-width="4" stroke-linecap="round"></path>
-</svg>
+<img class="cutout card-pic" src="img/stopwatch.png" alt="" style="transform: rotate(-8deg)" onerror="this.style.visibility='hidden'">
 <div style="font-size: 16px; letter-spacing: .1em; color: #E0D8CC">page 03</div>
 <div style="font-family: Milesdane, serif; font-size: 44px; line-height: 1.1">coming soon</div>
 <div style="margin-top: auto; height: 6px; background: #FF5FA2"></div>
 </div>
 
 <div class="card torn lift staff" style="padding: 34px 26px 30px; transform: rotate(2.4deg); display: flex; flex-direction: column; gap: 14px; min-height: 280px; box-sizing: border-box">
-<svg class="sticker" aria-hidden="true" viewBox="0 0 120 90" style="width: 96px; height: 72px; transform: rotate(-5deg)">
-<rect x="4" y="8" width="112" height="76" rx="4" fill="#E7F0FF"></rect>
-<path d="M4 12 L60 52 L116 12" stroke="#7C4DFF" stroke-width="6" fill="none" stroke-linejoin="round"></path>
-<circle cx="96" cy="66" r="12" fill="#D6336C"></circle>
-</svg>
+<img class="cutout card-pic" src="img/envelope.png" alt="" style="transform: rotate(-5deg)" onerror="this.style.visibility='hidden'">
 <div style="font-size: 16px; letter-spacing: .1em; background: #F4EEE3; align-self: flex-start; padding: 0 4px">page 04</div>
 <div style="font-family: Milesdane, serif; font-size: 44px; line-height: 1.1; background: #F4EEE3; align-self: flex-start; padding: 0 6px">coming soon</div>
 <div style="margin-top: auto; height: 6px; background: #7C4DFF"></div>
@@ -162,14 +107,9 @@ open the book
 </section>
 
 <section id="today" style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 520px; min-width: 0; position: relative; padding-top: 34px">
-<svg aria-hidden="true" viewBox="0 0 220 70" style="position: absolute; left: 50%; top: 0; width: 220px; height: 70px; transform: translateX(-50%); z-index: 2">
-<rect x="30" y="22" width="160" height="40" rx="8" fill="#9AA0A8"></rect>
-<rect x="30" y="22" width="160" height="12" rx="6" fill="#C6CBD1"></rect>
-<path d="M70 22 Q110 -6 150 22" stroke="#6F757D" stroke-width="7" fill="none"></path>
-</svg>
-<div class="lift" style="background: #C9A27A; padding: 46px 30px 34px; border-radius: 14px; transform: rotate(-1.5deg)">
-<form onsubmit="return false" style="background: #FFFFFF; padding: 30px 30px 36px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 2px 6px rgba(0,0,0,.15)">
+<div class="clipboard-wrap">
+<div class="clipboard cutout">
+<form class="clipboard-paper" onsubmit="return false">
 <h2 style="margin: 0 0 6px; font-family: Milesdane, serif; font-weight: 400; font-size: 58px; line-height: 1.1">today</h2>
 <p style="margin: 0 0 12px; font-size: 20px; color: #4A4448">write it down, check it off.</p>
 <div style="display: flex; align-items: center; gap: 14px; min-height: 52px">

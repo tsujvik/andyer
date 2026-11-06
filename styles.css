@@ -1,10 +1,10 @@
-/* ---------- main colors ---------- */
+/* colors */
 :root {
   --pink: #F4B6C8;
   --yellow: #F5D547;
 }
 
-/* ---------- fonts & page basics ---------- */
+/* fonts + basics */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 
@@ -13,7 +13,6 @@ html{scroll-behavior:smooth}
 body{margin:0;background:#E7DDD2}
 a{color:#141214}a:hover{color:#D6336C}
 .staff{background-color:#F4EEE3;background-image:repeating-linear-gradient(0deg,transparent 0 34px,rgba(20,18,20,.32) 34px 35px,transparent 35px 41px,rgba(20,18,20,.32) 41px 42px,transparent 42px 48px,rgba(20,18,20,.32) 48px 49px,transparent 49px 55px,rgba(20,18,20,.32) 55px 56px,transparent 56px 62px,rgba(20,18,20,.32) 62px 63px,transparent 63px 92px)}
-.keys{background-color:#F7F3EA;background-image:repeating-linear-gradient(0deg,#141214 0 14px,transparent 14px 26px,#141214 26px 40px,transparent 40px 60px,#141214 60px 74px,transparent 74px 86px,#141214 86px 100px,transparent 100px 112px,#141214 112px 126px,transparent 126px 146px),repeating-linear-gradient(0deg,rgba(20,18,20,.35) 0 1px,transparent 1px 20.8px);background-size:60% 146px,100% 146px;background-repeat:repeat-y;background-position:right top,0 0}
 .torn{clip-path:polygon(2% 3%,9% 0,17% 2%,26% 0,35% 3%,44% 0,53% 2%,62% 0,71% 3%,80% 0,89% 2%,98% 1%,100% 9%,98% 20%,100% 31%,99% 43%,100% 55%,98% 67%,100% 79%,99% 91%,97% 100%,87% 97%,76% 100%,65% 98%,54% 100%,43% 97%,32% 100%,21% 98%,10% 100%,1% 97%,0 86%,2% 74%,0 62%,1% 50%,0 38%,2% 26%,0 14%)}
 .sticker{filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(3px 6px 6px rgba(0,0,0,.3))}
 .lift{box-shadow:0 1px 0 rgba(0,0,0,.06),4px 10px 22px rgba(60,40,30,.28)}
@@ -30,11 +29,11 @@ a{color:#141214}a:hover{color:#D6336C}
 .write:focus{outline:none;border-bottom-color:#D6336C}
 @keyframes wob{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
 .wave{transform-origin:50% 50%;animation:wob 2.6s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:1}}
-.tw{animation:twinkle 3s ease-in-out infinite}
-@media (prefers-reduced-motion: reduce){.wave,.tw{animation:none}}
+@media (prefers-reduced-motion: reduce){.wave{animation:none}}
 
+/* change font-size here to resize the whole title */
 .title {
+  font-size: 80px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -61,80 +60,261 @@ a{color:#141214}a:hover{color:#D6336C}
 .l-a {
   background: var(--yellow);
   color: #141214;
-  font-size: 80px;
+  font-size: 1em;
   line-height: 1.3;
-  padding: 10px 18px 14px;  
+  padding: 0.12em 0.23em 0.17em;  
   transform: rotate(-6deg);
 }
 
 .l-n {
   background: #141214;
   color: #F7F3EA;
-  font-size: 76px;
-  padding: 4px 12px 10px;
+  font-size: 0.95em;
+  padding: 0.05em 0.16em 0.13em;
   transform: rotate(4deg);
 }
 
 .l-d {
   background: #FFFFFF;
   color: #C2255C;
-  font-size: 64px;
-  padding: 6px 10px;
+  font-size: 0.8em;
+  padding: 0.09em 0.16em;
   transform: rotate(-3deg);
 }
 
 .l-y {
   background: #6A3DE8;
   color: #FFFFFF;
-  font-size: 78px;
-  padding: 4px 12px 10px;
+  font-size: 0.975em;
+  padding: 0.05em 0.15em 0.13em;
   transform: rotate(7deg);
 }
 
 .l-apos {
   background: #F7F3EA;
   color: #141214;
-  font-size: 60px;
-  padding: 6px 8px;
+  font-size: 0.75em;
+  padding: 0.1em 0.13em;
   transform: rotate(-8deg);
 }
 
 .l-s {
   background: #141214;
   color: var(--yellow);
-  font-size: 80px;
-  padding: 4px 12px 10px;
+  font-size: 1em;
+  padding: 0.05em 0.15em 0.12em;
   transform: rotate(3deg);
 }
 
 .l-p {
   background: #F4EEE3;
   color: #141214;
-  font-size: 84px;
-  padding: 2px 12px 10px;
+  font-size: 1.05em;
+  padding: 0.02em 0.14em 0.12em;
   transform: rotate(5deg);
 }
 
 .l-a2 {
   background: var(--yellow);
   color: #141214;
-  font-size: 64px;
-  padding: 6px 10px;
+  font-size: 0.8em;
+  padding: 0.09em 0.16em;
   transform: rotate(-4deg);
 }
 
 .l-g {
   background: #141214;
   color: #F7F3EA;
-  font-size: 80px;
-  padding: 4px 12px 10px;
+  font-size: 1em;
+  padding: 0.05em 0.15em 0.12em;
   transform: rotate(6deg);
 }
 
 .l-e {
   background: #FFFFFF;
   color: #C2255C;
-  font-size: 74px;
-  padding: 4px 12px 10px;
+  font-size: 0.925em;
+  padding: 0.05em 0.16em 0.14em;
   transform: rotate(-5deg);
+}
+
+
+.cutout {
+  filter:
+    drop-shadow(4px 0 0 #fff)
+    drop-shadow(-4px 0 0 #fff)
+    drop-shadow(0 4px 0 #fff)
+    drop-shadow(0 -4px 0 #fff)
+    drop-shadow(5px 9px 8px rgba(60, 40, 30, .35));
+}
+
+.card-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+
+.clipboard-wrap {
+  flex: 1 1 520px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.clipboard {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  aspect-ratio: 623 / 948;          /* same shape as the photo */
+  background: url('img/clipboard.png') center / 100% 100% no-repeat;
+  transform: rotate(-2deg);
+}
+
+/* the writing area sits on the paper part of the photo */
+.clipboard-paper {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: 23%;                          /* starts just under the metal clip */
+  bottom: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: auto;
+}
+
+
+/* notebook on the front page (real photo, stuff sits on top of the pages) */
+.notebook {
+  display: flex;
+  justify-content: center;
+}
+
+.nb-photo {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  container-type: inline-size;
+}
+
+.nb-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 22px 26px rgba(60, 40, 30, .35));
+}
+
+/* page areas line up with the photo, in % so they stretch with it */
+.nb-page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 3cqw;
+  padding: 4cqw 3cqw;
+}
+.nb-left  { left: 2%;  top: 2%; width: 42%; bottom: 2%; }
+.nb-right { left: 56%; top: 2%; width: 42%; bottom: 2%; }
+
+.nb-page .title { font-size: 6.2cqw; gap: 1.2cqw 2cqw; }
+
+.blurb {
+  margin: 0;
+  font-size: clamp(14px, 2.3cqw, 24px);
+  line-height: 1.3;
+  background: #F7F3EA;
+  padding: 1.4cqw 1.8cqw;
+  transform: rotate(-1.5deg);
+  box-shadow: 3px 5px 0 rgba(0, 0, 0, .12);
+  position: relative;
+}
+/* tape */
+.blurb::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 40%;
+  width: 80px;
+  height: 22px;
+  background: rgba(241, 226, 178, .8);
+  transform: rotate(-4deg);
+}
+
+.open-btn {
+  align-self: flex-start;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #141214;
+  color: #F7F3EA;
+  padding: 1.4cqw 2.4cqw;
+  font-size: clamp(16px, 2.3cqw, 24px);
+  transform: rotate(2deg);
+  box-shadow: 5px 6px 0 var(--yellow);
+}
+.open-btn:hover { color: var(--yellow); }
+
+.nb-star { position: absolute; right: 2cqw; bottom: 3cqw; width: 10cqw; height: 10cqw; transform: rotate(-14deg); }
+.nb-bolt { position: absolute; left: 4cqw; top: 6cqw; width: 4.5cqw; height: 9cqw; transform: rotate(18deg); }
+
+.hi-burst {
+  position: relative;
+  width: 19cqw;
+  aspect-ratio: 230 / 200;
+  align-self: flex-end;
+  transform: rotate(8deg);
+}
+.hi-burst svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hi-burst span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-family: Milesdane, serif;
+  font-size: 5.6cqw;
+  transform: rotate(-12deg);
+}
+
+.doodle-wave { width: 100%; height: 9cqw; }
+
+.sticky-note {
+  margin-top: auto;
+  align-self: flex-end;
+  width: 30cqw;
+  background: var(--pink);
+  padding: 2.4cqw 2.2cqw 2.6cqw;
+  transform: rotate(3deg);
+  box-shadow: 3px 8px 14px rgba(60, 40, 30, .25);
+  position: relative;
+}
+.sticky-note::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 90px;
+  height: 24px;
+  margin-left: -45px;
+  background: rgba(241, 226, 178, .8);
+  transform: rotate(3deg);
+}
+.note-label { font-size: clamp(12px, 1.5cqw, 16px); letter-spacing: .08em; }
+.note-title { font-family: Milesdane, serif; font-size: 4cqw; line-height: 1.15; margin-top: 4px; }
+.note-sub   { font-size: clamp(13px, 1.7cqw, 18px); margin-top: 6px; }
+
+/* phones: the notebook is too small to write in, so only the title and
+   the burst stay on the pages and everything else drops below it */
+@media (max-width: 700px) {
+  .nb-page { display: contents; }
+  .nb-page .title { position: absolute; left: 6%; top: 10%; width: 36%; font-size: 7.5cqw; gap: 1.5cqw; }
+  .nb-page .title .word { flex-wrap: wrap; row-gap: 1.5cqw; }
+  .hi-burst { position: absolute; left: 63%; top: 14%; width: 26cqw; }
+  .hi-burst span { font-size: 7cqw; }
+  .nb-star, .nb-bolt, .doodle-wave { display: none; }
+  .blurb { margin-top: 28px; font-size: 20px; padding: 12px 16px; }
+  .open-btn { margin-top: 18px; padding: 14px 22px; font-size: 20px; }
+  .sticky-note { margin-top: 30px; width: auto; align-self: auto; padding: 20px; }
+  .note-title { font-size: 36px; }
 }
