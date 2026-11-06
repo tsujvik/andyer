@@ -4,40 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>andyer</title>
-<style>
-:root{--pink:#F4B6C8;--yellow:#F5D547}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-
-@font-face{font-family:'Milesdane';src:url('fonts/Milesdane.otf') format('opentype');font-display:swap}
-@font-face{font-family:'Baby Doll';src:url('fonts/BabyDoll.ttf') format('truetype');font-display:swap}
-body{margin:0;background:#E7DDD2}
-a{color:#141214}a:hover{color:#D6336C}
-.staff{background-color:#F4EEE3;background-image:repeating-linear-gradient(0deg,transparent 0 34px,rgba(20,18,20,.32) 34px 35px,transparent 35px 41px,rgba(20,18,20,.32) 41px 42px,transparent 42px 48px,rgba(20,18,20,.32) 48px 49px,transparent 49px 55px,rgba(20,18,20,.32) 55px 56px,transparent 56px 62px,rgba(20,18,20,.32) 62px 63px,transparent 63px 92px)}
-.keys{background-color:#F7F3EA;background-image:repeating-linear-gradient(0deg,#141214 0 14px,transparent 14px 26px,#141214 26px 40px,transparent 40px 60px,#141214 60px 74px,transparent 74px 86px,#141214 86px 100px,transparent 100px 112px,#141214 112px 126px,transparent 126px 146px),repeating-linear-gradient(0deg,rgba(20,18,20,.35) 0 1px,transparent 1px 20.8px);background-size:60% 146px,100% 146px;background-repeat:repeat-y;background-position:right top,0 0}
-.torn{clip-path:polygon(2% 3%,9% 0,17% 2%,26% 0,35% 3%,44% 0,53% 2%,62% 0,71% 3%,80% 0,89% 2%,98% 1%,100% 9%,98% 20%,100% 31%,99% 43%,100% 55%,98% 67%,100% 79%,99% 91%,97% 100%,87% 97%,76% 100%,65% 98%,54% 100%,43% 97%,32% 100%,21% 98%,10% 100%,1% 97%,0 86%,2% 74%,0 62%,1% 50%,0 38%,2% 26%,0 14%)}
-.sticker{filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(3px 6px 6px rgba(0,0,0,.3))}
-.lift{box-shadow:0 1px 0 rgba(0,0,0,.06),4px 10px 22px rgba(60,40,30,.28)}
-.starstrip{background-color:#141214;background-image:radial-gradient(circle,#F7F3EA 0 2.5px,transparent 3px);background-size:26px 100%;background-position:13px 50%}
-.tab{transition:transform .18s}
-.tab:hover{transform:translateX(8px)}
-.card{transition:transform .2s}
-.card:hover{transform:rotate(0deg) translateY(-8px) !important}
-.box{appearance:none;-webkit-appearance:none;width:24px;height:24px;border:2.5px solid #141214;border-radius:5px;background:#fff;margin:0;flex:none;cursor:pointer;display:grid;place-content:center}
-.box:checked{background:#D6336C;border-color:#D6336C}
-.box:checked::after{content:"";width:6px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
-.box:focus-visible,.write:focus-visible{outline:3px solid #7C4DFF;outline-offset:3px}
-.write{border:0;border-bottom:2px dotted rgba(20,18,20,.4);background:transparent;font:24px 'Baby Doll',sans-serif;color:#141214;padding:4px 2px;min-width:0}
-.write:focus{outline:none;border-bottom-color:#D6336C}
-@keyframes wob{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
-.wave{transform-origin:50% 50%;animation:wob 2.6s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:1}}
-.tw{animation:twinkle 3s ease-in-out infinite}
-@media (prefers-reduced-motion: reduce){.wave,.tw{animation:none}}
-
-.word{display:inline-flex;gap:4px;align-items:center}
-.ltr{display:inline-block;line-height:1;box-shadow:2px 3px 0 rgba(0,0,0,.18);font-weight:400}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div style="min-height: 100vh; background: #E7DDD2; background-image: radial-gradient(rgba(60,40,30,.07) 1px, transparent 1.2px); background-size: 5px 5px; font-family: 'Baby Doll', sans-serif; color: #141214; overflow: hidden; padding: 36px 16px 90px; box-sizing: border-box">
@@ -67,9 +34,9 @@ a{color:#141214}a:hover{color:#D6336C}
 <div aria-hidden="true" class="staff torn" style="position: absolute; left: -20px; bottom: -10px; width: 62%; height: 230px; transform: rotate(4deg); opacity: .95"></div>
 
 <div style="position: relative; display: flex; flex-direction: column; gap: 28px; padding-right: 60px">
-<h1 aria-label="andy's page" style="margin: 0; display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center">
-<span aria-hidden="true" class="word"><span class="ltr" style="background: var(--yellow); color: #141214; font-family: Milesdane, serif; font-size: 84px; padding: 4px 14px 14px; transform: rotate(-6deg)">&#xE001;</span><span class="ltr" style="background: #141214; color: #F7F3EA; font-family: Milesdane, serif; font-size: 76px; padding: 4px 12px 10px; transform: rotate(4deg)">n</span><span class="ltr" style="background: #FFFFFF; color: #C2255C; font-family: 'Baby Doll', sans-serif; font-size: 64px; padding: 6px 10px; transform: rotate(-3deg)">d</span><span class="ltr" style="background: #6A3DE8; color: #FFFFFF; font-family: Milesdane, serif; font-size: 78px; padding: 4px 12px 10px; transform: rotate(7deg)">y</span><span class="ltr" style="background: #F7F3EA; color: #141214; font-family: 'Baby Doll', sans-serif; font-size: 60px; padding: 6px 8px; transform: rotate(-8deg)">'</span><span class="ltr" style="background: #141214; color: var(--yellow); font-family: Milesdane, serif; font-size: 80px; padding: 4px 12px 10px; transform: rotate(3deg)">s</span></span>
-<span aria-hidden="true" class="word"><span class="ltr" style="background: #F4EEE3; color: #141214; font-family: Milesdane, serif; font-size: 84px; padding: 2px 12px 10px; transform: rotate(5deg)">p</span><span class="ltr" style="background: var(--yellow); color: #141214; font-family: 'Baby Doll', sans-serif; font-size: 64px; padding: 6px 10px; transform: rotate(-4deg)">a</span><span class="ltr" style="background: #141214; color: #F7F3EA; font-family: Milesdane, serif; font-size: 80px; padding: 4px 12px 10px; transform: rotate(6deg)">g</span><span class="ltr" style="background: #FFFFFF; color: #C2255C; font-family: Milesdane, serif; font-size: 74px; padding: 4px 12px 10px; transform: rotate(-5deg)">e</span></span>
+<h1 class="title" aria-label="andy's page">
+<span class="word" aria-hidden="true"><span class="ltr l-a">&#xE001;</span><span class="ltr l-n">n</span><span class="ltr l-d">d</span><span class="ltr l-y">y</span><span class="ltr l-apos">'</span><span class="ltr l-s">s</span></span>
+<span class="word" aria-hidden="true"><span class="ltr l-p">p</span><span class="ltr l-a2">a</span><span class="ltr l-g">g</span><span class="ltr l-e">e</span></span>
 </h1>
 
 <p style="margin: 0; max-width: 430px; font-size: 26px; line-height: 1.3; background: #F7F3EA; padding: 14px 18px; transform: rotate(-1deg); box-shadow: 3px 5px 0 rgba(0,0,0,.12)">a little book i keep online. one place to keep my days together, glued in as i go.</p>
